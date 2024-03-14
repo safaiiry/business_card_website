@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Сафронова Арина ИАС-21-2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="img/logo.png" width='100%' alt="">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">
+                            Сафронова 
+                            Арина
+                        </div>
+                        <div class="user__prof">
+                            Студентка группы ИАС-21-2 
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link">
+                        movies
+                    </a>
+                    <a href="#" class="nav__link">
+                        about me
+                    </a>
+                    <a href="#" class="nav__link">
+                        blog
+                    </a>
+                    <a href="#" class="nav__link">
+                        contact
+                    </a>
+                    <a href="#" class="nav__link nav__link--btn" data-modal="#modal_hire_me">
+                        hire me
+                    </a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="img/burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--Intro-->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                  
+                  <h2 class="intro__subtitle">
+                      Hello, I'm
+                  </h2>  
+                  <h1 class="intro__title">
+                      Jack Nicholson
+                  </h1>
+                  <div class="intro__text">
+                      Actor and filmmaker
+                  </div>
+                  <div class="social">
+                      <a href="#" class="social__link">
+                        <img src="img/vkontakte.svg" width="41px" height="41px">
+                      </a>
+                      <a href="#" class="social__link">
+                        <img src="img/in.svg" width="41px" height="41px">
+                      </a>
+                      <a href="#" class="social__link">
+                        <img src="img/facebook.svg" width="41px" height="41px">
+                      </a>
+                      <a href="#" class="social__link">
+                        <img src="img/twitter.svg" width="41px" height="41px">
+                      </a>
+                  </div>
+                  <a href="#" class="btn" data-modal="#modal_hire_me">
+                      HIRE ME
+                  </a>
+                  <a href="#" class="btn" type="button" data-modal="#modal_resume">
+                      SEE MY RESUME
+                  </a>
+                </div>
+                <img src="img/photo1.png" class="intro__photo"> 
+            </div>
+        </div>
+    </section>
+
+<div class="works">
+    <div class="container">
+        <div class="works__nav">
+            <a class="works__nav-link" href="#">
+                All
+            </a>
+            <a class="works__nav-link" href="#">
+                Crime
+            </a>
+            <a class="works__nav-link" href="#">
+                Drama
+            </a>
+            <a class="works__nav-link" href="#">
+                Interaction
+            </a>
+        </div>
+
+
+        <div class="portfolio">
+            <div class="portfolio_col" data-modal="#modal_project_1">
+                <div class="work">
+                    <img src="img/poster1.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">
+                            category: Crime   
+                        </div>
+                        <div class="work__title">
+                            The Departed 
+                            <time class="work__date" datetime="2021-28-02">
+                                2006
+                            </time>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio_col">
+                <div class="work">
+                    <img src="img/poster2.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">
+                            category: Crime   
+                        </div>
+                        <div class="work__title">
+                            The Pledge 
+                            <time class="work__date" datetime="2021-28-02">
+                                2001
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio_col">
+                <div class="work">
+                    <img src="img/poster3.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">
+                            category: Drama  
+                        </div>
+                        <div class="work__title">
+                            As good as it gets 
+                            <time class="work__date" datetime="2021-28-02">
+                                1997
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio_col">
+                <div class="work">
+                    <img src="img/poster4.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">
+                            category: Drama  
+                        </div>
+                        <div class="work__title">
+                            About schmidt 
+                            <time class="work__date" datetime="2021-28-02">
+                                2002
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio_col">
+                <div class="work">
+                    <img src="img/poster5.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">
+                            category: Comedy 
+                        </div>
+                        <div class="work__title">
+                            Anger management 
+                            <time class="work__date" datetime="2021-28-02">
+                                2003
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="portfolio_col">
+                <div class="work">
+                    <img src="img/poster6.jpg">
+                    <div class="work__content">
+                        <div class="work__cat">
+                            category: Comedy  
+                        </div>
+                        <div class="work__title">
+                            The bucket list 
+                            <time class="work__date" datetime="2021-28-02">
+                                2007
+                            </time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="about">
+    <div class="container">
+        <div class="about_inner">
+            <div class="about_photo">
+                <img src="img/Jack.png">
+            </div>
+            <div class="about_content">
+                <h3 class="about_title">
+                    ABOUT ME
+                </h3>
+                <h2 class="about_bigtitle">
+                    WHO AM I
+                </h2>
+                <div class="about_text">
+                    <p>
+                        John Joseph Nicholson is an American actor and filmmaker whose career has spanned more than 60 years. He is known for having played a wide range of starring and supporting roles, including comic characters, romantic leads, anti-heroes, and villains.
+                    </p>
+                    <p>
+                        Nicholson's 12 Academy Award nominations make him the most nominated male actor in the Academy's history. He has won the Academy Award for Best Actor twice, once for One Flew Over the Cuckoo's Nest (1975) and once for As Good as It Gets (1997).
+                    </p>
+                    <p>
+                        He is one of only three male actors to win three Academy Awards, and one of only two actors to be nominated for an Academy Award for acting in every decade from the 1960s to the 2000s.
+                    </p>
+                    <a class="btn" data-modal="#modal_hire_me">
+                        HIRE ME
+                    </a>
+                    <button class="btn" type="button" data-modal="#modal_resume">
+                        SEE MY RESUME
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--reviews-->
+<div class="reviews">
+    <div class="container">
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>One of the best films of the 21st century, The Departed keeps you on the edge of your seat and is incredibly exhilarating and the characters are incredibly well written and given great backstory. The ending will shock you and everything that comes before is some of Martin Scorsese's best work.</p>
+            </div>
+            <div class="reviews__author">
+                <img src="img/author.jpg" alt="" class="reviews__photo">
+                <div class="reviews__name">The Departed</div>
+                <div class="reviews__company">User Reviews</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13">
+                    <img class="reviews__star reviews__star--unactive" src="img/star.svg" width="13" height="13">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/cancel.svg">
+        </button>
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
+                <ul class="contact__info">
+                    <li class="contact__info-item"><img class="contact__info-icon" src="img/smartphone-call.svg" width="20">(812) 56 3652</li>
+                    <li class="contact__info-item"><img class="contact__info-icon" src="img/mail.svg" width="20">my_email@gmail.com</li>
+                </ul>
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Address e-mail</label>
+                        <input class="form__input" name="input-email" type="text" placeholder="Address e-mail" id="input-email">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Request</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request...">
+                        </textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn">send</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="contact__right">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/cancel.svg">
+        </button>
+        <div class="modal__content">
+            <h3 class="modal__title text-center">RESUME</h3>
+            <div class="text-center">
+                <a class="btn btn--thin">download pdf</a>
+                <a class="btn btn--thin">print</a>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline__col timeline__col--left">
+                    <h4 class="timeline__title">EXPERIENCE</h4>
+                    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="03-28-2021">2015 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">The Cry Baby Killer</h5>
+                        <div class="timeline__position">Filmmaker</div>
+                        <div class="timeline__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Dignissimos enim exercitationem iste recusandae ut. Ad 
+                            blanditiis cumque eaque iste porro quia soluta. Eligendi 
+                            hic officiis, quos rem saepe tempora unde.</div>
+                    </div>
+    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="03-28-2021">2015 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">The Bucket List</h5>
+                        <div class="timeline__position">Actor</div>
+                        <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Dignissimos enim exercitationem iste recusandae ut. Ad 
+                            blanditiis cumque eaque iste porro quia soluta. Eligendi 
+                            hic officiis, quos rem saepe tempora unde.</div>
+                    </div>
+    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="03-28-2021">2015 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">The Elephant's Child</h5>
+                        <div class="timeline__position">Director</div>
+                        <div class="timeline__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Dignissimos enim exercitationem iste recusandae ut. Ad 
+                            blanditiis cumque eaque iste porro quia soluta. Eligendi 
+                            hic officiis, quos rem saepe tempora unde.</div>
+                    </div>
+    
+                </div>
+                <div class="timeline__col timeline__col--right">
+                    <h4 class="timeline__title">EDUCATION</h4>
+    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="03-28-2021">1954 - 1969</time>
+                        <h5 class="timeline__subtitle">Manasquan High School</h5>
+                        <div class="timeline__position">Spring Lake, NJ</div>
+                    </div>
+    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="03-28-2021">In 2004</time>
+                        <h5 class="timeline__subtitle">High School Reunion</h5>
+                        <div class="timeline__position">5 line road, NJ</div>
+                    </div>
+                    
+                    <h4 class="timeline__title">SKILLS</h4>
+    
+                    <div class="progress-bar">
+    
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Actor</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Filmmaker</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Director</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <h4 class="timeline__title">AWARDS</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="03-28-2021">2005 - 2010</time>
+                        <h5 class="timeline__subtitle">Oscar wins</h5>
+                        <div class="timeline__position">Los Angeles, USA</div>
+                        <div class="timeline__text">
+                            With three Oscar wins, he also tyes with Walter Brennan, 
+                            Daniel Day-Lewis, Ingrid Bergman, and Meryl Streep 
+                            for the second-most Oscar wins in acting categories. Only 
+                            Katharine Hepburn, with four Oscars, won more,</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="img/cancel.svg">
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__previews">
+                <div data-slider="slick">
+                    <div>
+                        <img src="img/slider_imag1e_1.jpg" class="modal-work__photo">
+                    </div>
+                    <div>
+                        <img src="img/slider_image-2.jpg"  class="modal-work__photo">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">The departed</h3>
+                    <div class="modal-work__info">Crime
+                        <span class="modal-work__divider">|</span>
+                        2006
+                    </div>
+                </div>
+                <div class="modal-work__about">
+                    <div class="modal-work__about-title">
+                        Director:
+                    </div>
+                    <div class="modal-work__about-movie">
+                        Martin Scorsese
+                    </div>
+                </div>
+                <div class="modal-work__text">
+                    <p>
+                        Young undercover cop Bily Costigan is
+                        assigned to infiltrate the mob syndicate
+                        run by gangland chief Frank Costello.
+                        While Billy quickly gains Costello's
+                        confidence, Colin Sullivan, a hardened
+                        young criminal who has infiltrated the
+                        state police as an informer for the
+                        syndicate is rising to a position of power
+                        in the Special Investigation Unit.
+                    </p>
+                    <p>
+                        Each man becomes deeply consumed by
+                        their double lives, gathering information
+                        about the plans and counter-plans of the
+                        operations they have penetrated. But
+                        when it becomes clear to both the mob
+                        and the police that there is a mole in
+                        their midst, Billy and Colin are suddenly
+                        in danger of being caught and exposed
+                        to the enemy.
+                    </p>
+                </div>
+            
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="img/back.svg" height="12">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="img/next.svg" height="12">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
